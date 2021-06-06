@@ -5,25 +5,36 @@
   margin: 0;
   /*Во всех тегах отключены внешние отступы*/
   border: 0;
-  /*Выключены границы у всех тегов*/ }
+  /*Выключены границы у всех тегов*/
+}
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   /*Для Firefox cвойства width и height будут включать в себя значения полей и границ, но не отступов (margin).*/
   -webkit-box-sizing: border-box;
   /*Для Safari и Chrome cвойства width и height будут включать в себя значения полей и границ, но не отступов (margin)*/
   box-sizing: border-box;
-  /*для всех остальных браузеров cвойства width и height будут включать в себя значения полей и границ, но не отступов (margin)*/ }
+  /*для всех остальных браузеров cвойства width и height будут включать в себя значения полей и границ, но не отступов (margin)*/
+}
 
-:focus, :active {
-  outline: none; }
+:focus,
+:active {
+  outline: none;
+}
 
 /*Отключает обводку, которая возникает у некоторых браузеров*/
-nav, footer, header, aside {
-  display: block; }
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
 
 /*Делает блочными данные теги, для того чтобы к ним применялись блочные свойства(height,,max-width,min-width)*/
-html, body {
+html,
+body {
   height: 100%;
   /*Чтобы страница занимала 100% от высоты окна браузера*/
   width: 100%;
@@ -41,18 +52,24 @@ html, body {
   -moz-text-size-adjust: 100%;
   /*На браузере Firefox для телефонов будет стоять стандартный размер текста*/
   -webkit-text-size-adjust: 100%;
-  /*На браузерах Safari и Chrome для телефонов будет стоять стандартный размер текста*/ }
+  /*На браузерах Safari и Chrome для телефонов будет стоять стандартный размер текста*/
+}
 
-input, button, textarea {
-  font-family: inherit; }
+input,
+button,
+textarea {
+  font-family: inherit;
+}
 
 /*Стиль текста кнопок и полей будет зависить от тега-родителя, в котором он(и) находи(я)ться*/
 input::-ms-clear {
-  display: none; }
+  display: none;
+}
 
 /*Значек очистки поля, который появляеться при введение в него чего-нибудь ,спрятан*/
 button {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 /*Для всех кнопок курсор обьявлен как указывающая рука*/
 button::-moz-focus-inner {
@@ -60,28 +77,35 @@ button::-moz-focus-inner {
   padding: 0;
   /*Убирает специфические внутренние отступы у копок Firefox*/
   border: 0;
-  /*Убираетт обводку у кнопок Firefox*/ }
+  /*Убираетт обводку у кнопок Firefox*/
+}
 
-a, a:visited {
-  text-decoration: none; }
+a,
+a:visited {
+  text-decoration: none;
+}
 
 /*Сылки становяться без нижнего подчеркивания*/
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /*При наведении на ссылки тоже не будет подчеркивания*/
 a:not([class]) {
   text-decoration-skip-ink: auto;
-  /*Для всех элементов, которые не ссылки, при подчеркивании прерываеться на буквах, которые пересекают подчеркивание*/ }
+  /*Для всех элементов, которые не ссылки, при подчеркивании прерываеться на буквах, которые пересекают подчеркивание*/
+}
 
 table {
   border-collapse: collapse;
   /*при стыке ячеек таблицы одна линия */
   border-spacing: 0;
-  /*расстояние между границами ячеек нет*/ }
+  /*расстояние между границами ячеек нет*/
+}
 
 ul li {
-  list-style: none; }
+  list-style: none;
+}
 
 /*Убираються значки пунктов в списке*/
 img {
@@ -90,20 +114,29 @@ img {
   max-width: 100%;
   /*По стандарту изображение будет размером с файл изображения*/
   display: block;
-  /*Блочные изображения легче редактировать*/ }
+  /*Блочные изображения легче редактировать*/
+}
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   /*Размер текста заголовков зависит от размера блока, в котором находиться заголовок*/
   font-weight: inherit;
-  /*Насыщенность текста ставиться в зависимости от плотности блока, в котором находиться заголовок*/ }
+  /*Насыщенность текста ставиться в зависимости от плотности блока, в котором находиться заголовок*/
+}
 
 .ibg {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
-  .ibg img {
-    display: none; }
+  background-position: center;
+}
+.ibg img {
+  display: none;
+}
 
 .main {
   background: url("../img/bg.jpg") center repeat;
@@ -112,18 +145,34 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   backdrop-filter: blur(2px);
   padding-top: 400px;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 .main__text {
   text-align: center;
-  font-size: 40px; }
+  font-size: 40px;
+  display: block;
+}
+
+.text_date {
+  font-size: 20px;
+  margin-top: 10px;
+}
 
 @media (max-width: 360px) {
   .main__text {
-    font-size: 34px; } }
+    font-size: 34px;
+  }
+
+  .text_date {
+    font-size: 16px;
+    margin-top: 14px;
+  }
+}
 
 .love-text {
-  padding-top: 40px; }
+  padding-top: 40px;
+}
 
 .love-text__img {
   height: 64px;
@@ -131,68 +180,72 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   margin-bottom: 20px;
   border-radius: 50%;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .love-text__img img {
-  height: 64px; }
+  height: 64px;
+}
 
 .love-text__text {
   padding: 0px 40px;
   line-height: 2;
-  text-align: center; }
+  text-align: center;
+}
 
-  .remember {
-    height: auto;
-    width: 100%;
-    padding: 10px 5px 10px 10px;
-  }
+.remember {
+  height: auto;
+  width: 100%;
+  padding: 10px 5px 10px 10px;
+}
 
-  .remember h1{
-    font-size: 30px;
-    text-align: center;
-    margin: 40px 0px;
-  }
+.remember h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 40px 0px;
+}
 
-  .remember-item {
-    min-height: 400px;
-    width: 310px;
-    box-shadow: -2px 2px 2px rgba(0,0,0,0.5);
-    border: 1px solid rgba(0,0,0,0.5);
-    padding: 5px;
-    border-radius: 5px;
-    display: inline-block;
-    margin: 10px 0px;
-  }
+.remember-item {
+  min-height: 400px;
+  width: 310px;
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px 0px;
+}
 
-  .remember-item__img{
-    height: 300px;
-    width: 300px;
-    display: block;
-    overflow: hidden;
-    border-radius: 5px;
-  }
+.remember-item__img {
+  height: 300px;
+  width: 300px;
+  display: block;
+  overflow: hidden;
+  border-radius: 5px;
+}
 
-  /* Для тех мест, где изображение высокое */
-.show_center{
+/* Для тех мест, где изображение высокое */
+.show_center {
   margin-top: -50%;
 }
 
-  .remember-item__img img{
-    width: 100%;
-    height: auto;
-  }
+.remember-item__img img {
+  width: 100%;
+  height: auto;
+}
 
-  .remember-item__title {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10px;
-  }
+.remember-item__title {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
 
 .wrapper {
   width: 100%;
   min-height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
-
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
